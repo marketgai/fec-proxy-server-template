@@ -42,20 +42,20 @@
 
 module.exports = {
   service1: {
-    api: 'FIX_ME',
-    url: 'http://localhost:3001',
-    bundle: 'app.js',
+    api: '/restaurants/:id/popular-items',
+    url: 'http://localhost:4000',
+    bundle: 'bundle.js',
   },
   service2: {
-    api: 'FIX_ME',
+    api: '/restaurants/:resID/reviews',
     url: 'http://localhost:3002',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
   service3: {
-    api: 'FIX_ME',
+    api: '/restaurants/:restaurant_id/',
     url: 'http://localhost:3003',
-    bundle: 'app.js',
-  },
+    bundle: 'bundle.js',
+  }
   service4: {
     api: 'FIX_ME',
     url: 'http://localhost:3004',
