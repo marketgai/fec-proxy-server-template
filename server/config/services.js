@@ -53,7 +53,7 @@ module.exports = {
   },
   service3: {
     api: '/restaurants',
-    url: 'http://13.58.96.129:3003/',
+    url: 'http://13.58.96.129:3004/',
     bundle: 'bundle.js',
   },
   service4: {
