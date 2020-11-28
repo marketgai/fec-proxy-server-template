@@ -43,22 +43,22 @@
 module.exports = {
   service1: {
     api: '/restaurants/:id/popular-items',
-    url: 'http://localhost:4000',
+    url: 'http://52.53.228.221:4000/',
     bundle: 'bundle.js',
   },
   service2: {
     api: '/restaurants/:resID/reviews',
-    url: 'http://localhost:3002',
+    url: 'http://54.151.121.152:3000/',
     bundle: 'bundle.js',
   },
   service3: {
-    api: '/restaurants/:restaurant_id/',
-    url: 'http://localhost:3003',
+    api: '/restaurants',
+    url: 'http://13.58.96.129:3003/',
     bundle: 'bundle.js',
-  }
+  },
   service4: {
-    api: 'FIX_ME',
+    api: '',
     url: 'http://localhost:3004',
-    bundle: 'app.js',
+    bundle: 'bundle.js',
   },
 };
