@@ -4,12 +4,34 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>FEC Proxy Server Template</title>
+  <link href="./style.css" rel="stylesheet" />
   <!-- <link rel="stylesheet" href="style.css"> -->
 </head>
 <body>
+  <script>
+    document.addEventListener('scroll', function(e) {
+      if (window.scrollY > 390 ) {
+        document.getElementById("order").classList.add("fixed-img");
+      } else {
+        document.getElementById("order").classList.remove("fixed-img");
+      }
+      console.log(window.scrollY);
+    });
+  </script>
+  <img class="yelp-nav-bar" src="https://s3-us-west-1.amazonaws.com/fec.yelp/pagestatic/Screen+Shot+2020-12-01+at+8.41.46+PM.png" />
   <div id="service3"></div>
-  <div id="service1"></div>
-  <div id="service2"></div>
+  <div class="site-container">
+    <div></div>
+    <div>
+      <img class="yelp-nav-bar" src="https://s3-us-west-1.amazonaws.com/fec.yelp/pagestatic/Screen+Shot+2020-12-01+at+8.35.04+PM.png" />
+      <img class="yelp-nav-bar" src="https://s3-us-west-1.amazonaws.com/fec.yelp/pagestatic/Screen+Shot+2020-12-01+at+8.35.32+PM.png" />
+      <div id="service1"></div>
+      <div id="service2"></div>
+    </div>
+    <div>
+      <img id="order" class="static-img" src="https://s3-us-west-1.amazonaws.com/fec.yelp/pagestatic/Screen+Shot+2020-12-01+at+8.31.49+PM.png"  />
+    </div>
+  </div>
   <!-- <div id="service4"></div> -->
   <script src="bundles/service1.js"></script>
   <script src="bundles/service2.js"></script>
